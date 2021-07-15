@@ -1,0 +1,1 @@
+# wallet-widget-example
