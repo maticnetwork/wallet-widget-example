@@ -47,7 +47,7 @@
     "webpack-merge": "^4.2.1"
   },
   "dependencies": {
-    "@maticnetwork/wallet-widget": "^0.6.1",
+    "@maticnetwork/wallet-widget": "^0.6.2",
     "flexstyle": "^1.0.3"
   }
 }

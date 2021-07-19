@@ -5,7 +5,7 @@ import "flexstyle";
 
 const widget = new Widget({
     target: '#btnOpenWidget',
-    appId: "test",
+    appName: "test",
     position:"bottom-right"
 });
 
