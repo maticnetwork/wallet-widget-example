@@ -1,4 +1,4 @@
-import React, { useEffect, useCallback } from 'react';
+import React, { useEffect } from 'react';
 import { Widget } from "@maticnetwork/wallet-widget";
 
 const widget = new Widget({
@@ -11,13 +11,13 @@ const widget = new Widget({
 const App = () => {
 
   // subscribe to event onLoad
-  const load = useCallback(event => {
+  const load = () => {
     console.log('widget is loaded');
-  }, []);
+  };
 
-  const close = useCallback(event => {
+  const close = () => {
     console.log('widget is closed');
-  }, []);
+  };
 
   useEffect(() => {
     widget.on('load', load);
