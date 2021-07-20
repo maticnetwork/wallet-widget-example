@@ -4,36 +4,26 @@ import { Widget } from "@maticnetwork/wallet-widget";
 const widget = new Widget({
   target: '#btnOpenWidget',
   appName: "test",
-  position: "bottom-right"
+  position: "bottom-right",
 });
 
 
 const App = () => {
-  useEffect(() => {
-    widget.create();
-  }, [])
 
   // subscribe to event onLoad
   const load = useCallback(event => {
     console.log('widget is loaded');
   }, []);
-  useEffect(() => {
-    widget.on('load', load);
-    return () => {
-      widget.off('load', load);
-    }
-  }, [load])
-  // subscribe to event onClose
+
   const close = useCallback(event => {
     console.log('widget is closed');
   }, []);
-  useEffect(() => {
-    widget.on('close', close);
-    return () => {
-      widget.off('close', close);
-    }
-  }, [close])
 
+  useEffect(() => {
+    widget.on('load', load);
+    widget.on('close', close);
+    widget.create();
+  }, [])
 
   return (
     <React.Fragment>
