@@ -1,12 +1,16 @@
 import React, { useEffect } from 'react';
 import { Widget } from "@maticnetwork/wallet-widget";
 
+// Polygon Wiget
 const widget = new Widget({
   target: '#btnOpenWidget',
   appName: "test",
   position: "bottom-right",
+  autoShowTime: -3,
+  height: 618,
+  width: 400,
+  overlay: false,
 });
-
 
 const App = () => {
 
