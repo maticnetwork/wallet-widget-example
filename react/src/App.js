@@ -5,6 +5,10 @@ const widget = new Widget({
   target: '#btnOpenWidget',
   appName: "test",
   position: "bottom-right",
+  network: "testnet",
+  // style: {
+  //     color: 'blue'
+  // }
 });
 
 

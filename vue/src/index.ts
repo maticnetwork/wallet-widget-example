@@ -6,7 +6,11 @@ import "flexstyle";
 const widget = new Widget({
     target: '#btnOpenWidget',
     appName: "test",
-    position:"bottom-right"
+    position: "bottom-right",
+    network: "testnet",
+    // style: {
+    //     color: 'blue'
+    // }
 });
 
 const vue = new Vue({
