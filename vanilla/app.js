@@ -1,4 +1,4 @@
-async function myFunction() {
+async function openWidget() {
   const Widget = window.MaticWidget.Widget
 
   // Polygon Wallet Widget
